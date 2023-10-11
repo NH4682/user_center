@@ -59,6 +59,13 @@ public interface UserService extends IService<User> {
     Boolean authentication(HttpServletRequest request);
 
     /**
+     *
+     * @param loginUser 已登录用户
+     * @return
+     */
+    Boolean authentication(User loginUser);
+
+    /**
      * 用户信息脱敏
      * @param originUser 用户类
      * @return

@@ -40,8 +40,8 @@ public class SwaggerConfig {
      */
     private ApiInfo apiInfo() {
         return new ApiInfoBuilder()
-                .title("鱼皮用户中心")
-                .description("鱼皮用户中心接口文档")
+                .title("LTJ用户中心")
+                .description("LTJ用户中心接口文档")
                 .termsOfServiceUrl("https://github.com/liyupi")
                 .contact(new Contact("shayu","https://shayuyu.cn/","shayu-yusha@qq.com"))
                 .version("1.0")

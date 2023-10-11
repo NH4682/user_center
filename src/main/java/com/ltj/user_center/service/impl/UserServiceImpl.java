@@ -224,6 +224,14 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User>
         return true;
     }
 
+    public Boolean authentication(User loginUser) {
+        //判断是否为管理员
+        if (loginUser == null || loginUser.getRole() != ADMIN_ROLE) {
+            return false;
+        }
+        return true;
+    }
+
 
     /**
      * 用户信息脱敏
